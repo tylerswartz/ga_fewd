@@ -49,7 +49,16 @@ body {
      color: #000;
      font-size: 12px;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+     font-family: 'Tangerine',serif;
+}
+
+nav a {
+     font-size: 25px;
+     color: rgb(213,213,213);
+     text-decoration: none;
+     margin-right: 22px;
+     border-bottom: 1px solid;
+     padding-bottom: 4px;
 }
 
 a {
@@ -57,6 +66,46 @@ a {
      text-decoration: none;
 }
 
+h1 {
+     font-size: 40px;
+     margin-bottom: 10px;
+     color: rgb(203,37,37);
+}
+
+header h2 {
+     font-size: 20px;
+     margin-bottom: 8px;
+}
+
+h2 {
+     font-size: 36px;
+     margin-top: 5px;
+     margin-bottom: 8px;
+}
+
+h3 {
+     font-size: 36px;
+     color: rgb(213,213,213);
+     margin-bottom: 5px;
+}
+
+h4 {
+     color: rgb(203,37,37);
+     text-align: right;
+     font-size: 20px;
+}
+
+p {
+     color: rgb(52,52,52);
+     font-size: 20px;
+}
+
+.big-letter {
+     font-size: 100px;
+     color: rgb(213,213,213);
+     float: left;
+     margin: 0 15px 0 0;
+}
 
 /******************************************
 /* LAYOUT                   
@@ -64,12 +113,14 @@ a {
 
 /* Center the container */
 #container {
-	width: 960px;
+	width: 900px;
 	margin: auto;
      padding-top: 50px;
-     padding-left: 30px;
-     padding-right: 30px;
      padding-bottom: 30px;
+}
+
+hr {
+     color:rgb(52,52,52);
 }
 
 header {
@@ -84,9 +135,17 @@ footer {
 /* ADDITIONAL STYLES                   
 /*******************************************/
 
-#container nav{
-     color: rgb(213,213,213);
-     font-size: 2em;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
