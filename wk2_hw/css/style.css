@@ -12,19 +12,19 @@ Developer @GA in NYC
 
 /* Box Model Hack */
 * {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
@@ -46,115 +46,116 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-     color: #000;
-     font-size: 12px;
-     line-height: 1.4;
-     font-family: 'Source Sans Pro', sans-serif;
-     width: 900px;
-     margin: auto;
-     padding-top: 30px;
-     padding-bottom: 30px;
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 900px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 a {
-     color: inherit;
-     text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 header nav {
-     display: table;
-     width: 100%;
-     height: 45px;
-     background-color: black;
+  display: table;
+  width: 100%;
+  height: 45px;
+  background-color: black;
 }
 
 header nav a {
-     display: table-cell;
-     height: 45px;
-     width: 16.67%;
-     text-align: center;
-     font-size: 18px;
-     color: rgb(213,213,213);
-     text-decoration: none;
-     border-right: 1px solid rgb(255,255,255);
-     vertical-align: middle;
+  display: table-cell;
+  height: 45px;
+  width: 16.67%;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(213,213,213);
+  text-decoration: none;
+  border-right: 1px solid rgb(255,255,255);
+  vertical-align: middle;
 }
 
 header h1 {
-     font-size: 40px;
-     margin-bottom: 10px;
-     color: rgb(203,37,37);
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: rgb(203,37,37);
 }
 
 header h1 span {
-     font-size: 20px;
-     margin-bottom: 8px;
-     color: rgb(117,117,117);
-     padding-left: 20px;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: rgb(117,117,117);
+  padding-left: 20px;
 }
 
 h2 {
-     font-size: 36px;
-     margin-top: 5px;
-     margin-bottom: 8px;
+  font-size: 30px;
+  margin-top: 2px;
+  margin-bottom: 8px;
 }
 
 h3 {
-     font-size: 30px;
-     color: rgb(213,213,213);
-     margin-bottom: 5px;
+  font-size: 28px;
+  color: rgb(213,213,213);
+  margin-bottom: 3px;
 }
 
 h4 {
-     color: rgb(203,37,37);
-     text-align: right;
-     font-size: 20px;
+  color: rgb(203,37,37);
+  text-align: right;
+  font-size: 20px;
 }
 
 p {
-     color: rgb(52,52,52);
-     font-size: 17px;
+  color: rgb(52,52,52);
+  font-size: 17px;
 }
 
 img {
-     max-width:100%;
-     max-height:100%;
+  max-width:100%;
+  max-height:100%;
 }
 
 .big-letter {
-     font-size: 74px;
-     color: rgb(213,213,213);
-     float: left;
-     margin: 0 15px 0 0;
+  font-size: 74px;
+  color: rgb(213,213,213);
+  float: left;
+  margin: 0 15px 0 0;
 }
 
 #side h3 {
-     font-size: 24px;
-     color: rgb(117,117,117)
+  font-size: 24px;
+  color: rgb(117,117,117)
 }
 
 #side li {
-     font-size: 16px;
-     color: rgb(203,37,37);
+  font-size: 16px;
+  color: rgb(203,37,37);
 }
 
 #ad h2 {
-     color: rgb(132,132,132);
-     font-size: 65px;
+  color: rgb(132,132,132);
+  font-size: 65px;
 }
 
 .footer-nav a {
-     color: rgb(203,37,37);
-     font-size: 17px;
-     margin: 0 5px 0 5px;
+  color: rgb(203,37,37);
+  font-size: 17px;
+  margin: 0 3px 0 3px;
 }
 
 .footer-nav a:first-child {
-     margin: 0 5px 0 0;
+  margin: 0 3px 0 0;
 }
 
 footer p {
-     color: rgb(211,211,211);
+  font-size: 17px;
+  color: rgb(211,211,211);
 }
 
 
@@ -165,21 +166,21 @@ footer p {
 /* Center the container */
 #main {
 	width: 65%;
-     float: left;
+  float: left;
 	margin: auto;
-     padding: 0 20px 0 0;
+  padding: 0 20px 0 0;
 }
 
 #side {
-     width: 35%;
-     float: right;
-     margin: auto;
-     padding: 62px 0 0 20px;
-     border-spacing: 8px;
+  width: 35%;
+  float: right;
+  margin: auto;
+  padding: 62px 0 0 20px;
+  border-spacing: 8px;
 }
 
 hr {
-     color:rgb(52,52,52);
+  color:rgb(52,52,52);
 }
 
 header {
@@ -187,8 +188,8 @@ header {
 }
 
 footer {
-     padding-top: 37px;
-     clear: both;
+  padding-top: 37px;
+  clear: both;
 }
 
 /******************************************
@@ -197,13 +198,13 @@ footer {
 
 
 #ad {
-     border: solid 1px rgb(192,192,192); 
-     background: rgb(192,192,192);
-     width: 275px;
-     height: 220px;
-     display: table-cell;
-     text-align: center;
-     vertical-align: middle;
+  border: solid 1px rgb(192,192,192); 
+  background: rgb(192,192,192);
+  width: 275px;
+  height: 220px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
 
