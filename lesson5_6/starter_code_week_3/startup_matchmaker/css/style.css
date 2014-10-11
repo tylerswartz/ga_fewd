@@ -1,0 +1,19 @@
+header {
+	background: black;
+	width: 100%;
+}
+
+header h1 {
+	color: rgb(250,250,39);
+	padding: 15px 0 0 15px;
+}
+
+header nav {
+	text-align: right;
+}
+
+header nav a {
+	color: white;
+	text-decoration: none;
+	padding-right: 15px;
+}
