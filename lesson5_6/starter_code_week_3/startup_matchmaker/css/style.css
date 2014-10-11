@@ -1,19 +1,109 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+}
+
 header {
 	background: black;
 	width: 100%;
+	border-bottom: 3px solid yellow;
 }
 
 header h1 {
 	color: rgb(250,250,39);
-	padding: 15px 0 0 15px;
+	padding: 15px 0 15px 15px;
+	margin: 0px;
 }
 
 header nav {
 	text-align: right;
+	padding-bottom: 20px;
 }
 
 header nav a {
 	color: white;
 	text-decoration: none;
-	padding-right: 15px;
+	font-size: 18px;
+	padding-right: 20px;
 }
+
+.tagline {
+	width: 100%;
+	height: 60px;
+	border: 1px solid black;
+	background: rgb(186,186,186);
+	margin: 0px;
+	text-align: center;	
+	line-height: 60px;
+}
+
+.tagline h2 {
+	margin: 0px;
+	vertical-align: middle;
+	font-style: italic;
+}
+
+.taste {
+	color: rgb(114,114,114);
+	text-decoration: line-through;
+}
+
+.are {
+	border-bottom: 2px solid yellow;
+}
+
+.img-container {
+	margin: 0px;
+	width: 100%;
+	height: 375px;
+	border: 1px solid #333;
+	background-image: url(../images/coworking.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+.overlay {
+	width: 250px;
+	height: 300px;
+	border: 1px solid #333;
+	float: right;
+	margin: 15px 20px 15px 0 ;
+	background: white;
+	padding: 20px;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	margin: 15px 0 15px 0;
+	padding: 15px;
+	border-right: 2px solid gray;
+}
+
+.column:last-child{
+	border-right: none;
+}
+
+.clear-fix:after {
+  content: ".";
+	display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+
+footer {
+	
+}
+
+
+
+
+
+
