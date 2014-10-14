@@ -1,0 +1,175 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	margin: 0px;
+}
+
+header {
+	background: black;
+	width: 100%;
+	border-bottom: 3px solid yellow;
+}
+
+header h1 {
+	color: rgb(250,250,39);
+	padding: 15px 0 15px 15px;
+	margin: 0px;
+	font-size: 25px;
+}
+
+header nav {
+	text-align: right;
+	padding-bottom: 20px;
+}
+
+#mobile-break {
+	display: none;
+}
+
+header nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 20px;
+}
+
+.tagline {
+	width: 100%;
+	height: 60px;
+	background: rgb(186,186,186);
+	margin: 0px;
+	text-align: center;	
+	line-height: 60px;
+}
+
+.tagline h2 {
+	margin: 0px;
+	vertical-align: middle;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.taste {
+	color: rgb(114,114,114);
+	text-decoration: line-through;
+}
+
+.are {
+	border-bottom: 2px solid yellow;
+}
+
+.img-container {
+	margin: 0px;
+	width: 100%;
+	height: 350px;
+	background-image: url(../images/coworking.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	position: relative;
+}
+
+.overlay {
+	width: 275px;
+	border: 1px solid rgb(186,186,186);
+	box-shadow: 2px 2px 8px rgb(114,114,114);
+	position: absolute;
+	top: 17px;
+	right: 19px;
+	bottom: 17px;
+	background: white;
+	opacity: 0.8;
+	padding: 20px;
+}
+
+.overlay a {
+	text-decoration: none;
+	text-align: center;
+	font-weight: 700;
+	color: black;
+	background: rgb(250,250,39);
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 3px;
+	display: block;
+	box-shadow: 2px 2px 1px rgb(114,114,114);
+	text-transform: uppercase; 
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	margin: 15px 0 15px 0;
+	padding: 0 15px 15px 15px;
+	border-right: 2px solid rgb(186,186,186);
+}
+
+.column:last-child{
+	border-right: none;
+}
+
+.column h3 {
+	margin-top: 7px;
+}
+
+.column a {
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	font-weight: 700;
+	background: rgb(186,186,186);
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 3px;
+	display: block;
+	box-shadow: 2px 2px 1px rgb(114,114,114);
+	text-transform: uppercase;
+}
+
+.clear-fix:after {
+  content: ".";
+	display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+
+footer {
+	background: black;
+	height: 60px;
+	color: white;
+	padding: 5px 0 5px 15px;
+}
+
+
+
+/*CSS FOR MOBILE*/
+
+@media only screen and (max-width: 767px) {
+
+	#mobile-break {
+		display: inline;
+	}
+
+	.tagline {
+		display: none;
+	}
+
+	.column {
+		width: 100%;
+		border-right: none;
+		border-bottom: 2px solid rgb(186,186,186);
+	}
+
+	.column:last-child{
+	border-bottom: none;
+	}
+
+}
+
+
