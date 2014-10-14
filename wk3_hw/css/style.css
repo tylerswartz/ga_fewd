@@ -25,6 +25,10 @@ header nav {
 	padding-bottom: 20px;
 }
 
+#mobile-break {
+	display: none;
+}
+
 header nav a {
 	color: white;
 	text-decoration: none;
@@ -146,5 +150,26 @@ footer {
 
 /*CSS FOR MOBILE*/
 
+@media only screen and (max-width: 767px) {
+
+	#mobile-break {
+		display: inline;
+	}
+
+	.tagline {
+		display: none;
+	}
+
+	.column {
+		width: 100%;
+		border-right: none;
+		border-bottom: 2px solid rgb(186,186,186);
+	}
+
+	.column:last-child{
+	border-bottom: none;
+	}
+
+}
 
 
