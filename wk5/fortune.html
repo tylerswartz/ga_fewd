@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+	
+		<title>Fortune Teller</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<script src="fortune.js"></script>
+	</head>
+	<body>
+    <h1>Fortune Teller</h1>
+    <p>Enter some fortunes you'd like:</p>
+    <input type='text' id='newPrediction' />
+    <button onclick='addPrediction()'>Add</button>
+    <p>Now see what your future holds<span id="numFortunes"></span>.</p>
+    <button onclick='predictFuture();'>Predict my Future</button>
+	</body>
+</html>
