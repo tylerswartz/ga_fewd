@@ -22,14 +22,14 @@ function addPrediction() {
 	fortunes.push(document.getElementById('newPrediction').value);
 	document.getElementById('newPrediction').value = '';
 	var x = fortunes.length
-	document.getElementById('numFortunes').innerHTML = ' out of ' + x + ' fortunes.';
+	document.getElementById('numFortunes').innerHTML = ' from the ' + x + ' fortunes.';
 }
 
 
 
 function predictFuture() {
 	your_fortune = fortunes[Math.floor(Math.random() * fortunes.length)]
+	document.getElementById('numFortunes').innerHTML = '.';
 	alert("Your fortune is: " + your_fortune);
-	document.getElementById('numFortunes').innerHTML = '';
 	fortunes = [];
 }
