@@ -58,3 +58,13 @@ body {
   outline: none;
   border-color: rgba(255,255,255,.75);
 }
+
+.hidden {
+  display: none;
+}
+
+.h2 {
+  text-align: right;
+  color: red;
+  font-size: 15px;
+}
