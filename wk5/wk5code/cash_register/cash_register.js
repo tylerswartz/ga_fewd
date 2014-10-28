@@ -17,14 +17,14 @@ $(document).ready(function() {
 			input = parseFloat($("#newEntry").val());
 
 			// //check number
-			// while(isNaN(input)) {
+			// while(isNumeric(input)) {
 
 			// 	// give error msg
-			// 	$("#hidden").removeAttr(‘class’,'hidden');
+			// 	$(".hidden").removeAttr(‘class’,'hidden');
 			// 	$("h2").attr(‘class’,'hidden');
 
 			// 	//clear input
-			// 	$'#newEntry').value = '';
+			// 	$(':input','#entry').val('');
 
 			// 	//ask for another number
 			// 	input = parseFloat($("#newEntry").val());
@@ -44,8 +44,7 @@ $(document).ready(function() {
 			$("#total").html("$" + current_total.toFixed(2));
 
 			//clear input
-			// $('#newEntry').val = '';
-			$("#newEntry").focus("How much?");
+			$(':input','#entry').val('');
 
 			return false;
   	}
