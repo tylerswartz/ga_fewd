@@ -16,22 +16,22 @@ $(document).ready(function() {
 			//get text/value out
 			input = parseFloat($("#newEntry").val());
 
-			// //check number
-			// while(isNumeric(input)) {
+			// check number
+			while($.isNumeric(input)) {
 
-			// 	// give error msg
-			// 	$(".hidden").removeAttr(‘class’,'hidden');
-			// 	$("h2").attr(‘class’,'hidden');
+				// give error msg
+				$(".hidden").attr('class','error');
 
-			// 	//clear input
-			// 	$(':input','#entry').val('');
+				//clear input
+				$(':input','#entry').val('');
 
-			// 	//ask for another number
-			// 	input = parseFloat($("#newEntry").val());
+				//ask for another number
+				input = parseFloat($("#newEntry").val());
 
-			// 	//remove error msg
-			// 	$("h2").attr(‘class’,'hidden');
-			// };
+				//remove error msg
+				$(".error").attr('class','hidden');
+				
+			};
 
 			//add to current total
 			current_total = current_total + input;
@@ -50,3 +50,6 @@ $(document).ready(function() {
   	}
 	});	
 });
+
+
+

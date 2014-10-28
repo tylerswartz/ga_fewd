@@ -63,7 +63,7 @@ body {
   display: none;
 }
 
-.h2 {
+.error {
   text-align: right;
   color: red;
   font-size: 15px;
