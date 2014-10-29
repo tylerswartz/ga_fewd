@@ -26,6 +26,9 @@ body {
 #ticket td, #ticket th {
   padding: 5px;
 }
+#ticket tr td:first-child {
+  text-align: left;
+}
 #ticket th {
   text-align: left;
 }
