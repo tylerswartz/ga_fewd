@@ -1,5 +1,6 @@
 var current_total
-var input
+var price_input
+var item_input
 
 $(document).ready(function() {
 	//start total
@@ -14,18 +15,20 @@ $(document).ready(function() {
  		if(key === 13) {
   
 			//get text/value out
-			input = parseFloat($("#newEntry").val());
+			price_input = parseFloat($("#priceEntry").val());
+			item_input = $("#itemEntry").val();
+
 
 			// check number
-			if($.isNumeric(input)) {
+			if($.isNumeric(price_input)) {
 				//remove error msg if needed
 				$(".error").attr('class','hidden');
 
 				//add to current total
-				current_total = current_total + input;
+				current_total = current_total + price_input;
 			
 				//add new row to table
-				$("#entries tr:last").after('<tr><td></td><td>' + input.toFixed(2) + '</td></tr>');
+				$("#entries tr:last").after('<tr><td>' + item_input + '</td><td>' + price_input.toFixed(2) + '</td></tr>');
 
 				//sum and display as total in two decimals
 				$("#total").html("$" + current_total.toFixed(2));
@@ -42,7 +45,7 @@ $(document).ready(function() {
 				$(':input','#entry').val('');
 
 				//ask for another number
-				input = parseFloat($("#newEntry").val());
+				price_input = parseFloat($("#priceEntry").val());
 
 			}
 
