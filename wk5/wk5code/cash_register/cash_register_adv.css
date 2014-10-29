@@ -29,6 +29,13 @@ body {
 #ticket tr td:first-child {
   text-align: left;
 }
+#ticket img {
+  display: inline;
+  height: 15px;
+  width: 15px;
+  margin-left: 5px;
+}
+
 #ticket th {
   text-align: left;
 }
