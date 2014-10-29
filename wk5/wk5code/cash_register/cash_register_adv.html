@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cash Register</title>
+	<link rel='stylesheet' href='cash_register_adv.css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="cash_register_adv.js"></script>
+</head>
+<body>
+
+	<div id="register">
+	  <div id="ticket">
+	    <h1>Thank You!</h1>
+	    <table>
+	      <tbody id="entries">
+	      	<tr>
+						<td></td>
+						<td></td>
+					</tr>
+	      </tbody>
+	      <tfoot>
+	        <tr>
+	          <th>Total</th>
+	          <th id="total">$0.00</th>
+	        </tr>
+	      </tfoot>
+	    </table>
+	  </div>
+	  <form id="entry">
+	    <input id="newEntry" autocomplete="off" autofocus placeholder="How Much?">
+	  </form>
+	  <h2 class="hidden">Error, please enter a number.</h2>
+	</div>
+	
+</body>
+</html>
