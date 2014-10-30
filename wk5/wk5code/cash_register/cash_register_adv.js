@@ -32,7 +32,6 @@ $(document).ready(function() {
 		$('.delete').click(function(){
 	  	console.log($(this).parents('tr').find('td:last').text());
   		console.log($('#entries tr').length);
-return false;
 	  	// item_prices.remove($(this).parents('tr').find('td:last').text());
 	  	// total = eval(item_prices.join("+"));
 	  	// $(this).closest("tr").remove();
