@@ -54,7 +54,6 @@ body {
 }
 #entry input {
   display: inline;
-  width: 49%;
   padding: 10px;
   border: 1px solid black;
   text-align: right;
@@ -68,6 +67,12 @@ body {
 #entry input:focus {
   outline: none;
   border-color: rgba(255,255,255,.75);
+}
+#itemEntry {
+  width: 60%;
+}
+#priceEntry {
+  width: 38%;
 }
 
 
