@@ -29,7 +29,6 @@ $(document).ready(function() {
   	}
 
 		$('.delete').unbind().click(function(){
-	  	console.log($(this).parents('tr').find('td:last').text());
 	  	remove_price = parseFloat($(this).parents('tr').find('td:last').text());
 	  	total = total - remove_price
 	  	$(this).closest("tr").remove();
