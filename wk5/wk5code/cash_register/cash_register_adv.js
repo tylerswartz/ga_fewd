@@ -18,12 +18,12 @@ $(document).ready(function() {
 				total = total + price_input;
 				$("#entries tr:last").after('<tr><td>' + item_input + '<img class="delete" src="delete_icon.png"></td><td>' + price_input.toFixed(2) + '</td></tr>');
 				$("#total").html("$" + total.toFixed(2));
-				$(':input','#entry').val('');
+				$('input, #entry').val('');
 			}
 
 			else {
 				$(".hidden").attr('class','error');
-				$(':input','#entry').val('');
+				$('input, #entry').val('');
 				price_input = parseFloat($("#priceEntry").val());
 			}	
   	}
