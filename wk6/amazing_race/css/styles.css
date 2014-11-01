@@ -8,3 +8,26 @@ table {
 td.active {
 	background-color: black;
 }
+
+.winner {
+	text-align: center;
+	color: green;
+	margin-top: 36px;
+}
+
+#restart {
+width: 20%;
+margin: 0 40%;
+height: 38px;
+border-radius: 9px;
+background-color: green;
+color: white;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.show {
+	visibility: yes;
+}
