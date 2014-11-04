@@ -9,6 +9,44 @@ td.active {
 	background-color: black;
 }
 
+.course {
+	width: 650px;
+	height: 50px;
+	border: 2px solid black;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: gray;
+}
+
+.player-1 {
+	width: 13px;
+	height: 25px;
+	background-color: black;
+}
+
+.player-2 {
+	width: 13px;
+	height: 25px;
+	background-color: black;
+}
+
+.ready {
+	text-align: center;
+	color: green;
+	margin-top: 20px;
+}
+
+#start {
+	width: 20%;
+	margin: 0 40%;
+	height: 38px;
+	border-radius: 9px;
+	background-color: green;
+	color: white;
+}
+
+
 .winner {
 	text-align: center;
 	color: green;
