@@ -7,6 +7,9 @@ $(document).ready(function() {
 	var game_on = false;
 	var speed = 0;
 	var rand;
+	var start_time;
+	var end_time;
+	var time;
 	
 	//start positions
 	$(".player-1 td").eq(0).addClass('active');
@@ -15,6 +18,7 @@ $(document).ready(function() {
 	//start button for bot
 	$("#start").click(function(){
 		game_on = true;
+		start_time = $.now();
 		$("#start").addClass('hidden');
 		$(".ready").addClass('hidden');
 	});
@@ -22,17 +26,21 @@ $(document).ready(function() {
 	//check if the player or bot has reached the end.
 	function check_winner(){
 		if (player_one_position === 98 && player_two_position != 98) {
-			$(".winner").html("PLAYER ONE WINS!!");
+			end_time = $.now();
+			time = ((end_time - start_time) / 1000);
+			game_on = false;
+			$(".winner").html("Player one WINS with a time of " + time + " seconds!!");
 			$("#restart").removeClass('hidden');
 			$("#restart").addClass('show');
-			game_on = false;
 			$("body").off("keydown");
 
 		} else if (player_one_position != 98 && player_two_position === 98) {
-			$(".winner").html("PLAYER TWO WINS!!");
+			end_time = $.now();
+			time = ((end_time - start_time) / 1000);
+			game_on = false;
+			$(".winner").html("Player two WINS with a time of " + time + " seconds!!");
 			$("#restart").removeClass('hidden');
 			$("#restart").addClass('show');
-			game_on = false;
 			$("body").off("keydown");
 		}
 	};
@@ -61,7 +69,8 @@ $(document).ready(function() {
 				return false;
 			};
 		}, rand);
-	}, 160);		
+	}, 160);	
+
 
 	//Restart the game and play again
 	$("#restart").click(function(){
