@@ -15,13 +15,37 @@
 		<script src="amazing_race.js"></script>
 	</head>
 	<body>
-    <h1 class="ready">Ready to play?</h1>
-    <button type="button" id="start">Start</button>
-    <div class='course'>
-      <div class='player-1'></div>
-      <div class='player-2'></div>
+    <!-- Start Overlay -->
+    <div id="overlay"></div>
+    <!-- End Overlay -->
+    <!-- Start Setup Screen -->
+    <div id="setup-screen">
+    	<h2>Welcome to JSracer!</h2>
+    	<form id="play-form">
+    		<input id="name-input" type="text" name="player-name" placeholder="Your Name" autocomplete="off">
+    		<br>
+    		<button id="play" type="button">Play</button>
+    	</form>
     </div>
-    <h1 class="winner"></h1>
-    <button type="button" id="restart" class="hidden">Play Again</button>
+    <!-- End Setup Screen -->
+
+    <!-- Start Normal Page Content -->
+		<div id='wrapper'>
+	    <h1 class="ready">Ready to play?</h1>
+	    <button type="button" id="start">Start</button>
+		  <div class='game'> 
+		    <div class='names'>
+		    	<p class='first'></p>
+		    	<p>ROBOT</p>
+		    </div>
+		    <div class='course'>
+		      <div class='player-1'></div>
+		      <div class='player-2'></div>
+		    </div>
+		  </div>
+	    <h1 class='winner'></h1>
+	    <button type="button" id="restart" class="hidden">Play Again</button>
+		</div>
+	 	<!-- End Normal Page Content -->
 	</body>
 </html>

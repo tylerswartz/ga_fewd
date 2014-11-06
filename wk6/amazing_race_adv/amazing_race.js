@@ -3,14 +3,25 @@ $(document).ready(function() {
 	var player_one_rank = 0;
 	var player_one_position = 0;
 	var player_two_rank = 0;
-	var player_two_position= 0;
+	var player_two_position = 0;
 	var game_on = false;
 	var speed = 0;
 	var rand;
 	var start_time;
 	var end_time;
 	var time;
+	var player_name;
 	
+
+	//setup form and player name
+	$("#play").click(function(){
+		player_name = $("#name-input").val();
+		$(".first").text(player_name);
+		$("#overlay").css('display','none');
+		$("#setup-screen").css('display','none');
+		return false;
+	});
+
 	//start positions
 	$(".player-1 td").eq(0).addClass('active');
 	$(".player-2 td").eq(0).addClass('active');
@@ -23,13 +34,14 @@ $(document).ready(function() {
 		$(".ready").addClass('hidden');
 	});
 
+
 	//check if the player or bot has reached the end.
 	function check_winner(){
 		if (player_one_position === 98 && player_two_position != 98) {
 			end_time = $.now();
 			time = ((end_time - start_time) / 1000);
 			game_on = false;
-			$(".winner").html("Player one WINS with a time of " + time + " seconds!!");
+			$(".winner").html( player_name + " WINS with a time of " + time + " seconds!!");
 			$("#restart").removeClass('hidden');
 			$("#restart").addClass('show');
 			$("body").off("keydown");
@@ -38,7 +50,7 @@ $(document).ready(function() {
 			end_time = $.now();
 			time = ((end_time - start_time) / 1000);
 			game_on = false;
-			$(".winner").html("Player two WINS with a time of " + time + " seconds!!");
+			$(".winner").html("Robot WINS with a time of " + time + " seconds!!");
 			$("#restart").removeClass('hidden');
 			$("#restart").addClass('show');
 			$("body").off("keydown");
@@ -47,7 +59,7 @@ $(document).ready(function() {
 
 	//Player one keypress on A
 	$("body").keydown(function(e) {
- 		if(e.which === 65) {
+ 		if(e.which === 65 && game_on === true) {
 			player_one_rank ++;
 			player_one_position = player_one_position + 2;
 			$(".player-1").css('margin-left', player_one_position + '%');
