@@ -11,12 +11,14 @@ $(document).ready(function() {
 	var end_time;
 	var time;
 	var player_name;
-	
+	var avatar;
 
 	//setup form and player name
 	$("form").submit(function(){
-		player_name = $("#name-input").val();
+		player_name = $(".name-input").val();
 		$(".first").text(player_name);
+		avatar = $(".player-1-avatar:checked").val();
+		$("img.player-1").attr('src', avatar);
 		$("#overlay").css('display','none');
 		$("#setup-screen").css('display','none');
 		return false;
@@ -37,7 +39,7 @@ $(document).ready(function() {
 
 	//check if the player or bot has reached the end.
 	function check_winner(){
-		if (player_one_position === 98 && player_two_position != 98) {
+		if (player_one_position === 94 && player_two_position != 94) {
 			end_time = $.now();
 			time = ((end_time - start_time) / 1000);
 			game_on = false;
@@ -46,7 +48,7 @@ $(document).ready(function() {
 			$("#restart").addClass('show');
 			$("body").off("keydown");
 
-		} else if (player_one_position != 98 && player_two_position === 98) {
+		} else if (player_one_position != 94 && player_two_position === 94) {
 			end_time = $.now();
 			time = ((end_time - start_time) / 1000);
 			game_on = false;
@@ -81,7 +83,7 @@ $(document).ready(function() {
 				return false;
 			};
 		}, rand);
-	}, 160);	
+	}, 145);	
 
 
 	//Restart the game and play again

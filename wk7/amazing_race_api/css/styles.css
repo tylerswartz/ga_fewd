@@ -15,8 +15,8 @@
 	position: relative;
 	z-index: 3;
 	margin: 150px auto 0px auto;
-	width: 50%;
-	height: 200px;
+	width: 60%;
+	height: 300px;
 	background: white;
 	color: black;
 	text-align: center;
@@ -30,7 +30,7 @@
 	border-radius: 9px;
 	background-color: green;
 	color: white;
-	margin-top: 20px;
+	margin-top: 5px;
 }
 
 #wrapper {
@@ -40,6 +40,22 @@
 	width: 100%;
 	height: 100%;
 }
+
+form label {
+	margin-top: 15px;
+	display: block;
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+
+form img {
+	display: block;
+	width: 122px;
+	height: 90px;
+}
+
+
 
 /**/
 
@@ -54,9 +70,11 @@
 }
 
 .names {
-	width: 20%;
+	width: 10%;
 	margin-left: 0%;
-	margin-right: 80%;
+	margin-top: 20px;
+	padding-right: 9px;
+	text-align: right;
 	float: left;
 }
 
@@ -65,25 +83,25 @@
 }
 
 .course {
-	width: 80%;
-	height: 50px;
+	width: 84%;
+	height: 70px;
 	border: 2px solid black;
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color: gray;
+	display: inline-block;
 }
 
 .player-1 {
-	width: 13px;
-	height: 25px;
-	background-color: black;
+	padding-top: 3px;
+	width: 35px;
+	height: 30px;
 }
 
 .player-2 {
-	width: 13px;
-	height: 25px;
-	background-color: black;
+	width: 35px;
+	height: 30px;
 }
 
 .ready {
@@ -105,7 +123,7 @@
 .winner {
 	text-align: center;
 	color: green;
-	margin-top: 36px;
+	margin-top: 50px;
 }
 
 #restart {
@@ -123,4 +141,8 @@
 
 .show {
 	visibility: yes;
+}
+
+.clear-fix {
+	overflow: auto;
 }

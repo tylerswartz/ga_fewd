@@ -22,9 +22,24 @@
     <div id="setup-screen">
     	<h2>Welcome to JSracer!</h2>
     	<form id="play-form">
-    		<input id="name-input" type="text" name="player-name" placeholder="Your Name" autocomplete="off">
+    		<input class="name-input" type="text" name="player-name" placeholder="Your Name" autocomplete="off">
     		<br>
-    		<input type="submit" id="play" value-"Play">
+	    	<div class="clear-fix">	
+	    		<label>
+	    			<img src="http://max.distractify.com/wp-content/uploads/2014/01/new-userguide-image.jpg">
+	    			<input type="radio" class="player-1-avatar" name="avatar" value="http://max.distractify.com/wp-content/uploads/2014/01/new-userguide-image.jpg">
+	    		</label>
+		    	<label>
+		    		<img src="http://santamonicacentric.com/site/wp-content/uploads/2014/07/internet-famous-grumpy-cat-just-landed-an-endorsement-deal-with-friskies.jpg">
+		    		<input type="radio" class="player-1-avatar" name="avatar" value="http://santamonicacentric.com/site/wp-content/uploads/2014/07/internet-famous-grumpy-cat-just-landed-an-endorsement-deal-with-friskies.jpg">
+		    	</label>
+		    	<label>
+		    		<img src="http://legacy.altpug.com/Team/Logo/2725">
+		    		<input type="radio" class="player-1-avatar" name="avatar" value="http://legacy.altpug.com/Team/Logo/2725">
+		    	</label>
+		    </div>
+    		<br>
+    		<input type="submit" id="play" value="Go!">
     	</form>
     </div>
     <!-- End Setup Screen -->
@@ -39,8 +54,12 @@
 		    	<p>ROBOT</p>
 		    </div>
 		    <div class='course'>
-		      <div class='player-1'></div>
-		      <div class='player-2'></div>
+			    <div id='play1'>
+			     <img class='player-1'>
+			   	</div>
+			    <div id='bot'>
+			     <img src="http://img4.wikia.nocookie.net/__cb20130702055056/thegamingfamily/images/6/60/Robot_Dinoasur.jpg" class='player-2'>
+			   	</div>
 		    </div>
 		  </div>
 	    <h1 class='winner'></h1>
