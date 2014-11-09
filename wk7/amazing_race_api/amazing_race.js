@@ -12,6 +12,35 @@ $(document).ready(function() {
 	var time;
 	var player_name;
 	var avatar;
+	var avatar_search;
+
+	// function to build the flickr URL
+	function buildFlickerUrl(p){
+		var url = "https://farm";
+		url += p.farm;
+		url += ".staticflickr.com/";
+		url += p.server;
+		url += "/";
+		url += p.id;
+		url += "_";
+		url += p.secret;
+		url += ".jpg";
+		return url;
+	}
+
+	// search for avatar with API
+	$("#avatarSearchBtn").click(function(){
+		avatar_search = $(".search-input").val();
+		$("#avatars").removeClass('hidden');
+		$.get("https://www.flickr.com/services/rest/?method=flickr.photos.search&format=json&api_key=4ef070a1a5e8d5fd19faf868213c8bd0&nojsoncallback=1&text=" + avatar_search, function(response) { 
+    	for (var i=0; i < 3; i++){
+	    	var photoUrl = buildFlickerUrl(response.photos.photo[i]);
+	    	$("img").eq(i).attr('src', photoUrl);
+	    	$("input.player-1-avatar").eq(i).val(photoUrl);		
+    	};
+		});
+	});
+
 
 	//setup form and player name
 	$("form").submit(function(){
@@ -21,6 +50,7 @@ $(document).ready(function() {
 		$("img.player-1").attr('src', avatar);
 		$("#overlay").css('display','none');
 		$("#setup-screen").css('display','none');
+
 		return false;
 	});
 

@@ -22,21 +22,26 @@
     <div id="setup-screen">
     	<h2>Welcome to JSracer!</h2>
     	<form id="play-form">
-    		<input class="name-input" type="text" name="player-name" placeholder="Your Name" autocomplete="off">
+    		<input class="name-input" type="text" name="player-name" placeholder="Your Name" autocomplete="off" required>
+    		<br>
+    		<input class="search-input" type="text" name="search-flickr" placeholder="Search for an avatar (i.e. cat)" autocomplete="off">
+    		<button type="button" id="avatarSearchBtn">Search</button>
     		<br>
 	    	<div class="clear-fix">	
-	    		<label>
-	    			<img src="http://max.distractify.com/wp-content/uploads/2014/01/new-userguide-image.jpg">
-	    			<input type="radio" class="player-1-avatar" name="avatar" value="http://max.distractify.com/wp-content/uploads/2014/01/new-userguide-image.jpg">
-	    		</label>
-		    	<label>
-		    		<img src="http://santamonicacentric.com/site/wp-content/uploads/2014/07/internet-famous-grumpy-cat-just-landed-an-endorsement-deal-with-friskies.jpg">
-		    		<input type="radio" class="player-1-avatar" name="avatar" value="http://santamonicacentric.com/site/wp-content/uploads/2014/07/internet-famous-grumpy-cat-just-landed-an-endorsement-deal-with-friskies.jpg">
-		    	</label>
-		    	<label>
-		    		<img src="http://legacy.altpug.com/Team/Logo/2725">
-		    		<input type="radio" class="player-1-avatar" name="avatar" value="http://legacy.altpug.com/Team/Logo/2725">
-		    	</label>
+	    		<div id="avatars" class="hidden">	
+	    			<label>
+	    				<img>
+	    				<input type="radio" class="player-1-avatar" name="avatar">
+	    			</label>
+		    		<label>
+		    			<img>
+		    			<input type="radio" class="player-1-avatar" name="avatar">
+		    		</label>
+		    		<label>
+		    			<img>
+		    			<input type="radio" class="player-1-avatar" name="avatar">
+		    		</label>
+		    	</div>
 		    </div>
     		<br>
     		<input type="submit" id="play" value="Go!">
@@ -47,7 +52,7 @@
     <!-- Start Normal Page Content -->
 		<div id='wrapper'>
 	    <h1 class="ready">Ready to play?</h1>
-	    <button type="button" id="start">Start</button>
+	    <button type="button" id="start">Click Me</button>
 		  <div class='game'> 
 		    <div class='names'>
 		    	<p class='first'></p>

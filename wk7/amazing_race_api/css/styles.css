@@ -41,6 +41,7 @@
 	height: 100%;
 }
 
+
 form label {
 	margin-top: 15px;
 	display: block;
@@ -53,6 +54,10 @@ form img {
 	display: block;
 	width: 122px;
 	height: 90px;
+}
+
+.search-input {
+	margin-top: 10px;
 }
 
 
