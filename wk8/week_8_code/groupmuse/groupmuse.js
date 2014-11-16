@@ -26,6 +26,7 @@ $(document).ready(function() {
   // Set up a submit handler so that refresh is called when the form is submitted
   $("form.search").submit(function(event) {
     // refresh();
+    $("table.events tbody").text("");
     event.preventDefault();
 
     city = ($("form.search :selected").val());
@@ -51,7 +52,7 @@ $(document).ready(function() {
 
 
 
-    // return false;
+    return false;
   });
 
   // Call it once on page load

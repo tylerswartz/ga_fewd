@@ -1,5 +1,6 @@
 var username;
 
+
 $(document).ready(function() {
 
 
@@ -9,12 +10,12 @@ $(document).ready(function() {
   // It will also be called for each existing message when the page is loaded!
   firebaseMessages.on('child_added', function(snapshot) {
     var message = snapshot.val();
-    console.log(message);
+    // console.log(message);
 
     // We need to append the message into the .messages div here!
-    /////////////////
-    // YOUR CODE HERE
-    /////////////////
+    $(".messages").append(
+      "<p><strong>" + message.name + ": </strong>" + message.text + "</p>"
+    );
 
 
     // Leave this guy alone:
@@ -25,6 +26,7 @@ $(document).ready(function() {
   });
 
   $('.newMessageForm').submit(function () {
+
     // The user has just submitted the form to send a message.
     // We'll need to:
     // 1) Grab the value of the text input
@@ -32,9 +34,14 @@ $(document).ready(function() {
     // 3) Use firebaseMessage.push to add the new message object to firebase
     // 4) Reset the input to an empty string with ""
 
-    /////////////////
-    // YOUR CODE HERE
-    /////////////////
+    var name = username;
+    var text = $(".newMessage").val();
+    firebaseMessages.push({name: name, text: text});
+    $('.newMessage').val('');
+
+
+
+
 
 
     // Always return false with submit handlers, unless you want the page to refresh!
